@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NASA APOD</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/framework7.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body class="theme-dark">
+        <!-- app root-->
+        <div id="app">
+            <!--Your main view-->
+            <div class="view view-main">
+                <!--Your first page-->
+                <div class="page" data-name="home">
+                    <div class="navbar color-theme-white">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a class="link" href="pages/page2.html"> &#8701; Yesterday</a>
+                            </div>
+                            <div class="right">
+                                <a href="index.html" class="link">Today</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <h1 id="td-title"></h1>
+
+                        <div class="grid-parent"> 
+                            <div class="item-1">
+                                    <a class="link popover-open" href="#" data-popover=".popover-about">
+                                        <img id="td-image">
+                                    </a>
+                            </div>
+                            <div class="item-2">
+                                <h3 id="td-copyright"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popover popover-about">
+                        <div class="popover-inner">
+                          <div class="block">
+                            <h3>About</h3>
+                            <p id="td-explanation"></p>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+        <!--Framwork7 Library-->
+        <script src="js/framework7.min.js"></script>
+        <!--NASA APOD-->
+        <script src="js/apodapp.js"></script>
+        <script src="js/apodapp-altpage.js"></script>
+        <!--Your own Javascript-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
